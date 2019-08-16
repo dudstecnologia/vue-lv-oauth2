@@ -12,7 +12,7 @@
     </div>
 
     <div class="card col s12">
-
+      Contas: {{ accounts }}
       <div class="card-content">
         <table class="highlight">
           <thead>
@@ -46,6 +46,14 @@ export default {
       // console.log(id)
       this.$router.push('/contas/' + id)
     }
+  },
+  computed: {
+    accounts () {
+      return this.$store.state.account.accountList
+    }
+  },
+  created () {
+    this.$store.dispatch('getAccounts')
   }
 }
 </script>
