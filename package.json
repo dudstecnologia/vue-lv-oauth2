@@ -13,7 +13,7 @@
   "dependencies": {
     "html-loader": "^0.5.5",
     "ionicons": "^4.6.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "material-icons": "^0.3.1",
     "materialize-css": "^1.0.0",
     "vue": "^2.5.2",
